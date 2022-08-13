@@ -17,12 +17,15 @@ Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mhinz/vim-startify'
 
-" File explorer plug
+" File explorer
 " Plug 'scrooloose/nerdtree'
 Plug 'kyazdani42/nvim-web-devicons' | Plug 'kyazdani42/nvim-tree.lua'
 
-" Themes plugs
+" Themes
 Plug 'dracula/vim', { 'as': 'dracula' }
+" Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+" Plug 'morhetz/gruvbox'
+" Plug 'joshdick/onedark.vim'
 
 " Plugs for especific programming languages
 source $DOTFILES_ROOT/nvim/common/specific_dev_plugs.vim

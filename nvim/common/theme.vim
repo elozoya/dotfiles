@@ -1,4 +1,16 @@
-" Colorscheme
-let g:dracula_colorterm = 0
-silent! colorscheme dracula
+set termguicolors
 
+" Set Dracula as the colorscheme
+colorscheme dracula
+
+" tokyonight
+" colorscheme tokyonight
+
+" gruvbox
+" let g:gruvbox_italic=1
+" set background=dark
+" colorscheme gruvbox
+
+" onedark
+" set background=dark
+" colorscheme onedark
