@@ -26,3 +26,8 @@ nnoremap <leader>bl :bl<enter>
 nnoremap <leader>bn :bn<enter>
 nnoremap <leader>bp :bp<enter>
 nnoremap <leader>bd :bd<enter>
+nnoremap <leader>qq :bd<enter>
+
+" close all buffers except current one
+" https://tech.serhatteker.com/post/2020-06/close-all-buffers-but-current-in-vim/
+command! Bufonly execute '%bdelete|edit#|bdelete#'
