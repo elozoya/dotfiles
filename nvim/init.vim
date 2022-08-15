@@ -46,7 +46,7 @@ source $DOTFILES_ROOT/nvim/plugins/vim_airline.vim
 source $DOTFILES_ROOT/nvim/plugins/fzf.vim
 source $DOTFILES_ROOT/nvim/plugins/ack.vim
 " source $DOTFILES_ROOT/nvim/plugins/nerdtree.vim
-luafile $DOTFILES_ROOT/nvim/plugins/nvim_tree.lua
+silent! luafile $DOTFILES_ROOT/nvim/plugins/nvim_tree.lua
 source $DOTFILES_ROOT/nvim/plugins/ultisnips.vim
 source $DOTFILES_ROOT/nvim/plugins/vim_closetag.vim
 source $DOTFILES_ROOT/nvim/plugins/vim_gitgutter.vim

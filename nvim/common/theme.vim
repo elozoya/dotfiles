@@ -1,7 +1,7 @@
 set termguicolors
 
 " Set Dracula as the colorscheme
-colorscheme dracula
+silent! colorscheme dracula
 
 " tokyonight
 " colorscheme tokyonight
