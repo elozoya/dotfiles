@@ -1,4 +1,9 @@
-require("nvim-tree").setup({
+local ok, nvimtree = pcall(require, "nvim-tree")
+if not ok then
+  return
+end
+
+nvimtree.setup({
   renderer = {
     icons = {
       glyphs = {
@@ -15,5 +20,6 @@ require("nvim-tree").setup({
     },
   },
 })
+
 vim.keymap.set('n', '<Leader>t', '<Cmd>NvimTreeToggle<CR>')
 vim.keymap.set('n', '<Leader>f', '<Cmd>NvimTreeFindFileToggle<CR>')
