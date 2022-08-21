@@ -1,3 +1,7 @@
+if empty($DOTFILES_ROOT) && isdirectory(expand('~/dotfiles'))
+  let $DOTFILES_ROOT = '~/dotfiles'
+endif
+
 " Plugs
 call plug#begin('~/.vim/plugged')
 " Plugs for every programming language
