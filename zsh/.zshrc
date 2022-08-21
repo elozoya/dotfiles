@@ -27,6 +27,9 @@ HISTFILE=~/.zsh/.zsh_history
 # this would bind ctrl + n to accept the current suggestion.
 bindkey '^n' autosuggest-accept
 
+# this would bind ctrl + u to delete everything from the cursor to beginning of the line
+bindkey \^U backward-kill-line
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [[ ! -f $DOTFILES_ROOT/zsh/.p10k.zsh ]] || source $DOTFILES_ROOT/zsh/.p10k.zsh
