@@ -8,10 +8,14 @@
 
 ```sh
   curl -s https://raw.githubusercontent.com/elozoya/dotfiles/master/install.sh | bash
+  # source or restart your terminal
+  source ~/.zshrc
 ```
 
 ```sh
   wget -qO - https://raw.githubusercontent.com/elozoya/dotfiles/master/install.sh | bash
+  # source or restart your terminal
+  source ~/.zshrc
 ```
 
 ## Install dotfiles after cloning the repository
@@ -51,4 +55,14 @@
 5. Install git configuration
 ```sh
   ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
+```
+
+6. Source the new zsh configuration or restart your terminal
+```sh
+  source ~/.zshrc
+```
+
+7. Install vim plugs
+```sh
+  nvim --headless +PlugInstall +qall
 ```

@@ -62,3 +62,16 @@ if [ ! -f ~/.gitconfig ]; then
 else
   echo "git configuration could not be installed because there is already a ~/.gitconfig"
 fi
+
+# Install vim plugs
+# if the directory ~/.vim/plugged does not exist
+# or if the ~/.vim/plugged is empty
+if ([ ! -d ~/.vim/plugged ] || [ -z "$(ls -A ~/.vim/plugged)" ])
+then
+    echo "Installing vim plugs ..."
+    if DOTFILES_ROOT=$INSTALL_PATH nvim --headless +PlugInstall +qall; then
+      echo "vim plugs installed"
+    else
+      echo "vim plugs could not be installed"
+    fi
+fi
