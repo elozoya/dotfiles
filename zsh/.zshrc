@@ -16,6 +16,7 @@ source $DOTFILES_ROOT/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#585858"
 
 # change history file location
+[[ -d ~/.zsh ]] || mkdir ~/.zsh
 HISTFILE=~/.zsh/.zsh_history
 
 # Use vim keybindings
