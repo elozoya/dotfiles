@@ -1,7 +1,7 @@
 " if there is not configuration do not try to load any file
-if !isdirectory($NEOVIM_DEV_ENVIRONMENTS_ROOT . '/environments/ ' . $NEOVIM_DEV_ENVIRONMENT)
+if !isdirectory($NEOVIM_DEV_ENVIRONMENTS_ROOT . '/environments/' . $NEOVIM_DEV_ENVIRONMENT)
   finish
-fi
+endif
 
 " Plugs for especific programming languages
 if $NEOVIM_DEV_ENVIRONMENT == 'php'
