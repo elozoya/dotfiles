@@ -13,6 +13,9 @@ else
   elif [ ! -f $INSTALL_PATH/nvim/init.vim ]; then
     echo "$INSTALL_PATH/nvim/init.vim file not found so it cannot be installed"
     exit 1
+  elif [ ! -f $INSTALL_PATH/nvim/plugins/coc-settings.json ]; then
+    echo "$INSTALL_PATH/nvim/plugins/coc-settings.json file not found so it cannot be installed"
+    exit 1
   elif [ ! -f $INSTALL_PATH/tmux/.tmux.conf ]; then
     echo "$INSTALL_PATH/tmux/.tmux.conf file not found so it cannot be installed"
     exit 1
@@ -47,6 +50,12 @@ if [ ! -f ~/.config/nvim/init.vim ]; then
   ln -s $INSTALL_PATH/nvim/init.vim ~/.config/nvim/init.vim
 else
   echo "neovim configuration could not be installed because there is already a ~/.config/nvim/init.vim"
+fi
+
+if [ ! -f ~/.config/nvim/coc-settings.json ]; then
+  ln -s $INSTALL_PATH/nvim/plugins/coc-settings.json ~/.config/nvim/coc-settings.json
+else
+  echo "neovim coc-settings configuration could not be installed because there is already a ~/.config/nvim/coc-settings.json"
 fi
 
 # 4. Install tmux configuration

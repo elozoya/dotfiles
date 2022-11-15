@@ -45,6 +45,7 @@
 ```sh
   mkdir -p ~/.config/nvim
   ln -s ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+  ln -s ~/dotfiles/nvim/plugins/coc-settings.json ~/.config/nvim/coc-settings.json
 ```
 
 4. Install tmux configuration
